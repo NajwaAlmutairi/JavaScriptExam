@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+    <title>home page</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar-class">
+        <a class="navbar-brand" href="home.html">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+                <path
+                    d="M40-410v-80h160v80H40Zm214-210L140-733l57-56 113 113-56 56Zm-14 420q-21 0-35.5-14.5T190-250q0-21 14.5-35.5T240-300q21 0 35.5 14.5T290-250q0 21-14.5 35.5T240-200Zm40-210v-40q0-83 58.5-141.5T480-650q83 0 141.5 58.5T680-450v40h-80v-40q0-50-35-85t-85-35q-50 0-85 35t-35 85v40h-80Zm80 370q-21 0-35.5-14.5T310-90q0-21 14.5-35.5T360-140q21 0 35.5 14.5T410-90q0 21-14.5 35.5T360-40Zm120-160q-21 0-35.5-14.5T430-250q0-21 14.5-35.5T480-300q21 0 35.5 14.5T530-250q0 21-14.5 35.5T480-200Zm-40-530v-160h80v160h-80ZM600-40q-21 0-35.5-14.5T550-90q0-21 14.5-35.5T600-140q21 0 35.5 14.5T650-90q0 21-14.5 35.5T600-40Zm106-580-57-56 114-113 56 56-113 113Zm14 420q-21 0-35.5-14.5T670-250q0-21 14.5-35.5T720-300q21 0 35.5 14.5T770-250q0 21-14.5 35.5T720-200Zm40-210v-80h160v80H760Zm-280 0Z" />
+            </svg>
+        </a>
+        <a class="navbar-brand nav-custom-item" href="home.html" style="font-size: 1.2rem;
+                  color: white;">My Weather Page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link nav-custom-item" href="home.html" style="font-size: 1.2rem;
+                    color: white;">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown custom-dropdown">
+                    <a class="nav-link dropdown-toggle nav-custom-item" href="#" id="navbarDropdownMenuLink" style="font-size: 1.2rem;
+                      color: white;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span id="userloggedIn"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a id="logoutbut" class="dropdown-item" href="#">Log out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="options-container">
+        <div class="options-sub-container">
+            <div class="opthion-box">
+                <div class="img-div">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                        fill="#F9DB78">
+                        <path
+                            d="M450-770v-150h60v150h-60Zm256 106-42-43 106-106 42 43-106 106Zm64 214v-60h150v60H770Zm1 302L665-254l43-43 106 106-43 43ZM254-664 148-770l42-42 106 106-42 42Zm-14 484h180q33.33 0 56.67-23.26Q500-226.53 500-259.76 500-293 477.24-317q-22.77-24-56.24-24h-44l-18-41q-15.15-35.75-47.6-56.88Q278.95-460 240-460q-58.33 0-99.17 40.76-40.83 40.77-40.83 99Q100-262 140.83-221q40.84 41 99.17 41Zm0 60q-83 0-141.5-58.5T40-320q0-83 58.5-141.5T240-520q57.74 0 105.37 32.5T416-401q60.12 0 101.06 43.59Q558-313.82 558-253q-5 56-44.03 94.5Q474.93-120 420-120H240Zm318-133q-3-15.38-6-30t-6-30q52-20 83-65.54 31-45.54 31-101.32 0-75.14-52.5-127.64T480-660q-67.22 0-117.63 42.67Q311.96-574.65 303-509q-16-3-31.5-5.5T240-520q14-88 82.5-144T480-720q100 0 170 70t70 170.34Q720-402 675.5-340T558-253Zm-77-227Z" />
+                    </svg>
+                </div>
+                <button id="weatherbtn"><a href="weather.html"> check the <span>weather</span> with us!</a></button>
+            </div>
+            <div class="opthion-box">
+                <div class="img-div">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                        fill="#CCDAF5">
+                        <path
+                            d="m627-287 45-45-159-160v-201h-60v225l174 181ZM480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-82 31.5-155t86-127.5Q252-817 325-848.5T480-880q82 0 155 31.5t127.5 86Q817-708 848.5-635T880-480q0 82-31.5 155t-86 127.5Q708-143 635-111.5T480-80Zm0-400Zm0 340q140 0 240-100t100-240q0-140-100-240T480-820q-140 0-240 100T140-480q0 140 100 240t240 100Z" />
+                    </svg>
+                </div>
+                <button id="prayingbtn"><a href="pray.html">check the <span>praying</span> time with us!</a></button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="home.js"></script>
+</body>
+
+</html>

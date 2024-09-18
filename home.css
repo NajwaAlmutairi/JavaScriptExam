@@ -1,0 +1,133 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: rgb(237, 232, 232);
+    height: 100vh;
+}
+
+.navbar-class {
+    background-color: #cd8e8e;
+}
+
+.custom-dropdown {
+    transform: translateX(-140px);
+}
+
+.nav-custom-item {
+    font-size: 1.2rem;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(242, 235, 235);
+    ;
+}
+
+
+/*  */
+
+.options-container {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: black; */
+}
+
+
+.options-sub-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 90%;
+    background-color: #e0cccc;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.opthion-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 61vh;
+    width: 25vw;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 9px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.opthion-box button {
+    width: 20vw;
+    height: 7vh;
+    border: none;
+    background-color: indianred;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+} 
+
+
+.img-div {
+    width: 15vw;
+    height: 15vh;
+    background-color: rgb(99, 96, 96);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button span {
+    font-weight: 700;
+    color: #f6f6bd;
+}
+
+@media only screen and (max-width:600px) {
+    .custom-dropdown {
+        transform: translateX(0px);
+    }
+
+    .options-container {
+        height: 85vh;
+        width: 100%;
+    }
+
+
+    .options-sub-container {
+        width: 95%;
+        height: 150vh;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .opthion-box {
+        height: 61vh;
+        width: 44vw;
+        width: 90%;
+    }
+
+    .opthion-box button {
+        width: 41vw;
+        height: 8vh;
+        font-size: 1rem;
+    }
+
+    .img-div {
+        width: 31vw;
+        height: 15vh;
+    }
+
+
+}

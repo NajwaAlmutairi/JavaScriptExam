@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+    <title>home page</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar-class">
+        <a class="navbar-brand" href="home.html">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+                <path
+                    d="M40-410v-80h160v80H40Zm214-210L140-733l57-56 113 113-56 56Zm-14 420q-21 0-35.5-14.5T190-250q0-21 14.5-35.5T240-300q21 0 35.5 14.5T290-250q0 21-14.5 35.5T240-200Zm40-210v-40q0-83 58.5-141.5T480-650q83 0 141.5 58.5T680-450v40h-80v-40q0-50-35-85t-85-35q-50 0-85 35t-35 85v40h-80Zm80 370q-21 0-35.5-14.5T310-90q0-21 14.5-35.5T360-140q21 0 35.5 14.5T410-90q0 21-14.5 35.5T360-40Zm120-160q-21 0-35.5-14.5T430-250q0-21 14.5-35.5T480-300q21 0 35.5 14.5T530-250q0 21-14.5 35.5T480-200Zm-40-530v-160h80v160h-80ZM600-40q-21 0-35.5-14.5T550-90q0-21 14.5-35.5T600-140q21 0 35.5 14.5T650-90q0 21-14.5 35.5T600-40Zm106-580-57-56 114-113 56 56-113 113Zm14 420q-21 0-35.5-14.5T670-250q0-21 14.5-35.5T720-300q21 0 35.5 14.5T770-250q0 21-14.5 35.5T720-200Zm40-210v-80h160v80H760Zm-280 0Z" />
+            </svg>
+        </a>
+        <a class="navbar-brand nav-custom-item" href="home.html" style="font-size: 1.2rem;
+                  color: white;">My Weather Page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link nav-custom-item" href="home.html" style="font-size: 1.2rem;
+                    color: white;">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown custom-dropdown">
+                    <a class="nav-link dropdown-toggle nav-custom-item" href="#" id="navbarDropdownMenuLink" style="font-size: 1.2rem;
+                      color: white;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span id="userloggedIn"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a id="logoutbut" class="dropdown-item" href="#">Log out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <h2 id="todaytext"></h2>
+        <p id="praying-date"></p>
+
+        <button id="getDate"> GetToday Hijri date!</button>
+        <p id="Hijriday"></p>
+
+        <button id="getDateGregorian"> GetToday Gregorian date!</button>
+        <p id="gregorianday"></p>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="home.js"></script>
+    <script src="datetime.js"></script>
+</body>
+
+</html>
